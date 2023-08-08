@@ -4,3 +4,4 @@ This is sample Quiz webpage where you can attend quiz on different topics and lo
 validation is also done for login page and sign up page.
 The quizzes also required to complete within the given time.
 The pages are also connected properly.
+The required photos is also added in the files.
