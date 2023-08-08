@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+     :root {
+        /*Defining variable,root accessible*/
+        --success-color: #2ecc71;
+        --error-color: #e74c3c;
+    }
+    
+    * {
+        box-sizing: border-box;
+        /* The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element, padding and border are included in the width and height: Both divs are the same size now!*/
+        /*Link - https://jsbin.com/pugenef/1/edit?html,css,output */
+    }
+    
+    body {
+        background-image: url("logp.webp");
+        font-family: 'Opens Sans', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50vh;
+        margin: 0;
+    }
+    
+    .container {
+        border: transparent;
+        height: 18cm;
+        width: 30%;
+        margin: 1cm 14cm 2cm;
+        background-color: rgb(58, 58, 58);
+        border-radius: 2cm;
+        box-shadow: -5px 5px 4px rgb(95, 100, 95);
+    }
+    
+    h2 {
+        text-align: center;
+        margin: 0 0 20px;
+    }
+    
+    .form {
+        padding: 30px 40px;
+    }
+    
+    .form-control {
+        margin-bottom: 10px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    
+    .form-control label {
+        color: #777;
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    .form-control input {
+        border: 2px solid #f0f0f0;
+        border-radius: 2px;
+        display: block;
+        width: 100%;
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    .form-control input:focus {
+        outline: 0;
+        border-color: #777;
+    }
+    
+    .form-control.success input {
+        border-color: var(--success-color);
+    }
+    
+    .form-control.error input {
+        border-color: var(--error-color);
+    }
+    
+    .form-control small {
+        color: var(--error-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+        /*visibility: hidden; = simply hides it whereas Display:none = collapse the content*/
+    }
+    
+    .form-control.error small {
+        visibility: visible;
+    }
+    
+    .form button {
+        cursor: pointer;
+        background-color: #3498db;
+        border: 2px solid #3498db;
+        border-radius: 4px;
+        color: #fff;
+        display: block;
+        font-size: 16px;
+        padding: 10px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    
+    .logo {
+        height: 80px;
+        width: 80px;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <form id="form" class="form" action="Homepage.html">
+            <h2>Register With Us</h2>
+            <div class="imgcontainer">
+                <center>
+                    <img src="qhlogo.jpeg" alt="Avatar" class="logo">
+                </center>
+            </div>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter username">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="Repassword">Confirm Password</label>
+                <input type="password" id="Repassword" placeholder="Enter password again">
+                <small>Error Message</small>
+            </div>
+            <button type="submit"><a href="Homepage.html" style="text-decoration: none;">SIGN UP</a></button>
+            <br>
+            <center>
+                <a href="login.html" style="margin-left: 70%; text-decoration: none; color: #fff;">Login Here</a>
+            </center>
+
+        </form>
+    </div>
+    <script type="text/javascript" src="sign.js"></script>
+</body>
+
+</html>

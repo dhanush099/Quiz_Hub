@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .loginb {
+        background-image: url("logp.webp");
+    }
+    
+    .d1 {
+        text-align: center;
+        border: transparent;
+        height: 12cm;
+        width: 30%;
+        margin: 1cm 14cm 2cm;
+        background-color: rgb(58, 58, 58);
+        border-radius: 2cm;
+        box-shadow: -5px 5px 4px rgb(95, 100, 95);
+    }
+    
+    .logo {
+        height: 80px;
+        width: 80px;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        text-align: center;
+        color: hotpink;
+        font-family: 'Courier New', Courier, monospace;
+        margin: 1.5cm;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    
+    .login {
+        height: 35px;
+        width: 100%;
+        border-radius: 3px;
+        background-color: rgb(28, 251, 228);
+        border: transparent;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    }
+    
+    .login:hover {
+        background-color: lime;
+    }
+    
+    .loglab {
+        color: bisque;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 22px;
+    }
+    
+    .psw {
+        color: gold;
+    }
+    
+    .psw:hover {
+        color: rgb(91, 15, 233);
+    }
+    
+    .boxes {
+        height: 20px;
+        width: 200px;
+    }
+    
+    .boxes:hover {
+        background-color: rgb(181, 178, 178);
+        color: aliceblue;
+    }
+    
+    .boxes:focus {
+        background-color: hotpink;
+    }
+    
+    .logh {
+        letter-spacing: 20px;
+        font-weight: bolder;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+        margin-bottom: -22px;
+        margin-top: 20px;
+        color: white;
+    }
+    
+    .acch {
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        color: rgb(28, 28, 28);
+        text-align: center;
+        color: rgb(181, 178, 178)
+    }
+    
+    .lf {
+        background-color: rgb(66 103 178);
+        border: transparent;
+        width: 5cm;
+        height: 0.8cm;
+    }
+    
+    .lfi {
+        height: 0.8cm;
+        width: auto;
+    }
+    
+    .lt {
+        background-color: rgb(29 161 242);
+        border: transparent;
+        width: 5cm;
+        height: 0.8cm;
+    }
+    
+    .lti {
+        height: 0.8cm;
+        width: auto;
+    }
+    
+    .lg {
+        background-color: rgb(255, 255, 255);
+        border: transparent;
+        width: 5cm;
+        height: 0.8cm;
+    }
+    
+    .lgi {
+        height: 0.8cm;
+        width: auto;
+    }
+    
+    .not {
+        color: azure;
+    }
+</style>
+
+<body class="loginb">
+    <div>
+        <div>
+            <br><br>
+            <center><img src="qhlogo.jpeg" alt="Avatar" class="logo"></center>
+        </div>
+        <div class="d1">
+
+            <form>
+                <br>
+                <p class="logh">LOGIN</p>
+                <p class="acch">to your account...</p>
+                <br>
+                <div class="container1">
+                    <label class="loglab"><b><i>USERNAME</i></b></label> &emsp;
+                    <input type="text" placeholder="Enter Username" name="uname" class="boxes" required>
+                    <br><br>
+                    <label class="loglab"><b><i>PASSWORD</i></b></label> &emsp;
+                    <input type="password" placeholder="Enter Password" name="psw" class="boxes" required>
+                    <br><br>
+                    <input type="checkbox" checked="checked" style="height: 15px; width:15px;"><label style="color:bisque; font-family: 'Courier New', Courier, monospace;">Remember Me!</label>
+                    <br><br>
+                    <button type="submit" style="text-align:center;" class="login"><a href="Homepage.html" style="text-decoration: none;">L O G I N</a></button>
+                    <br><br>
+                    <span><a href="#" class="psw">Forgot password?</a></span><br><br>
+                    <hr>
+                    <p>Not a member? <a href="sign.html" class="not">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

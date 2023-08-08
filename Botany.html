@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Wcss.css">
+    <title>Quiz Website</title>
+</head>
+<style>
+    #tll {
+        color: aqua;
+        font-size: 45px;
+        font-weight: 700;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 25px;
+        text-align: center;
+    }
+    
+    #tl {
+        color: beige;
+        font-size: 45px;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: 400;
+    }
+    
+    .bnw {
+        background-image: url("bnw.jpg");
+    }
+</style>
+
+<body class="bnw">
+    <div style="text-align:center;">
+        <p id="tl">TIME LEFT: </p>
+        <p id="tll"><span id="timer"></span>s.</p>
+    </div>
+    <script type="text/javascript">
+        var count = 30;
+        var redirect = "test.html";
+
+        function countDown() {
+            if (count >= 0) {
+                document.getElementById("timer").innerHTML = count--;
+                setTimeout("countDown()", 1000);
+            } else {
+                window.location.href = "timeup.html";
+            }
+        }
+        countDown();
+    </script>
+    <div class="quiz-box" id="quiz">
+        <div class="grquiz">
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="opta">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="optb">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="optc">Answer</label>
+                </li>
+
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="optd">Answer</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">Next Question</button>
+    </div>
+    <script src="Botany.js"></script>
+</body>
+
+</html>

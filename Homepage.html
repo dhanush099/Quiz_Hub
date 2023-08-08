@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Wcss.css">
+    <title>Quiz Website</title>
+</head>
+<style>
+    .mainb {
+        background-image: url("abg.png");
+    }
+    
+    #log {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    #sig {
+        font-family: 'Courier New', Courier, monospace;
+    }
+</style>
+
+<body class="mainb">
+    <br/>
+    <div>
+        <table>
+            <tr>
+                <th>&nbsp;&nbsp;&nbsp;</th>
+                <th><img class="logo" src="qhlogo.jpeg"></th>
+                <th width="1500px">
+                    <div class="t1">
+                        <h2 class="ti">
+                            <span class="title-word word-1">QUIZ</span>
+                            <span class="title-word word-2">HUB</span>
+                        </h2>
+                    </div>
+                </th>
+                <th class="log"><a class="login" href="login.html"><button id="log">LOGIN</button></a></th>
+                <th class="sig"><a class="login" href="sign.html"><button id="sig">SIGN UP</button></a></th>
+                <th class="men"><button id="men">
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="abtus.html">ABOUT</a>
+                        <a href="1.html">CONTACT US</a>
+                        <a href="query.html">QUERIES</a>
+                        <a href="tandc.html">TERMS & CONDITIONS</a>
+                       
+                    </div>
+                
+                
+                    <span style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                
+                    <script>
+                        function openNav() {
+                            document.getElementById("mySidenav").style.width = "250px";
+                        }
+                
+                        function closeNav() {
+                            document.getElementById("mySidenav").style.width = "0";
+                        }
+                    </script>
+                </button></th>
+            </tr>
+        </table>
+    </div>
+    <a id="mst" href="Whtml.html" target="_self"><button class="mst" >START QUIZZING
+    </button></a>
+</body>
+
+</html>
