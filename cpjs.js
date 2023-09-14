@@ -100,7 +100,7 @@ submitBtn.addEventListener('click', () => {
 
        <button onclick="location.reload()">Reload</button>
        <a href="Whtml.html" class="mm" style="text-decoration: none;"><button>Main Menu</button></a>
-       <a href="Homepage.html" class="mm" style="text-decoration: none;"><button>Home</button></a>
+       <a href="index.html" class="mm" style="text-decoration: none;"><button>Home</button></a>
        `
         }
     }
